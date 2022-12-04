@@ -7,6 +7,14 @@
     font-size: 3vw;
     cursor: default;
 }
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 0.5vw;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #F2C335;
+}
 
 body{
     background-color: #191641;
@@ -30,19 +38,22 @@ body{
     padding-left: 2.5%;
     padding-right: 2.5%;
     display: flex;
-    gap: 5%;
 }
 
-.questionDiv{
+#questionDiv{
     background-color: #FAFAFAAA;
-    border-radius: 2vh;
+    border-radius: 2vh 0 0 2vh;
     width: 50%;
     height: 95%;
+    overflow-y: auto;
+    text-align: justify;
+    font-size: 3.5vh;
+    padding-inline: 1vw;
 }
 
 .answerDiv{
-    background-color: #F2C335AA;
-    border-radius: 2vh;
+    background-color: #FF6A18;
+    border-radius: 0 2vh 2vh 0;
     width: 50%;
     height: 95%;
     display: grid;
@@ -54,8 +65,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
     overflow-y: auto;
+    font-size: 2vh;
+    text-align: justify;
+    padding-inline: 1vw;
 }
 .answerDiv > *:hover {
     background-color: black;
