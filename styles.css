@@ -1,7 +1,69 @@
 *{
+    transition: all 500ms ease-in-out;
     margin: 0;
     padding: 0;
+    overflow-y: hidden;
+    font-family: 'Bahnschrift';
+    font-size: 3vw;
+    cursor: default;
 }
+
 body{
-    background-color: beige;
+    background-color: #191641;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.quizzBody{
+    border-radius: 1vw;
+    height: 60vh;
+    width: 70vw;
+    background-color: #6F3DF4;
+}
+
+#quizzDivCont{
+    max-width: 100%;
+    width: 95%;
+    height: 90%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: flex;
+    gap: 5%;
+}
+
+.questionDiv{
+    background-color: #FAFAFAAA;
+    border-radius: 2vh;
+    width: 50%;
+    height: 95%;
+}
+
+.answerDiv{
+    background-color: #F2C335AA;
+    border-radius: 2vh;
+    width: 50%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.answerDiv > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    overflow-y: auto;
+}
+.answerDiv > *:hover {
+    background-color: black;
+    color: white;
+}
+
+
+#QuestionTitle{
+    text-align: center;
+    font-size: 6vh;
 }
